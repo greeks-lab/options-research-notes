@@ -8,6 +8,9 @@ Public, crawlable notes on reading options and multi-asset research tools withou
 - [Glossary: radar, scores, credits, Skills](./glossary.md)
 - [Research tool ≠ broker](./tool-not-broker.md)
 - [Opportunity score ≠ win rate](./score-not-win-rate.md)
+- [Stock radar scores ≠ buy lists](./stock-radar-not-buy-list.html)
+- [Free vs paid research credits](./free-vs-paid-credits.html)
+- [Skills / Agent helpers ≠ brokers](./skills-agent-helpers.html)
 
 ## Disclosure
 
