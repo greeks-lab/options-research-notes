@@ -4,6 +4,7 @@ Public, crawlable notes on reading options and multi-asset research tools withou
 
 ## Pages
 
+- [What is an AI options analysis tool](./what-is-ai-options-analysis-tool.html)
 - [FAQ: What AlphaGBM is / is not](./faq.md)
 - [Glossary: radar, scores, credits, Skills](./glossary.md)
 - [Research tool ≠ broker](./tool-not-broker.md)
