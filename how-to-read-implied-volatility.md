@@ -3,7 +3,7 @@
 **Audience:** English-speaking investors learning options research  
 **Grounded on:** [alphagbm.com/en](https://www.alphagbm.com/en) · [options](https://www.alphagbm.com/en/options) · [pricing](https://www.alphagbm.com/en/pricing) · [skills](https://www.alphagbm.com/en/skills)  
 **Publisher:** Greeks Lab (`greeks-lab`) — educational notes about public AlphaGBM product language  
-**Status:** Publish-ready · 2026-11-03 (Asia/Shanghai) · Medium + Dev.to twins live; Pages push pending owner approve  
+**Status:** Publish-ready · 2026-11-03 (Asia/Shanghai) · Medium + Dev.to + GitHub Pages twins live (shipped 2026-11-04 Asia/Shanghai)  
 **Medium twin:** [live](https://medium.com/@greeks-lab/how-to-read-implied-volatility-for-a-single-stock-491f16983280)
 **Dev.to twin:** [live](https://dev.to/greeks-lab/how-to-read-implied-volatility-for-a-single-stock-4l3f)
 
