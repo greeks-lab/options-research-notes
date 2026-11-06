@@ -4,6 +4,7 @@ Public, crawlable notes on reading options and multi-asset research tools withou
 
 ## Pages
 
+- [How to read an equity options chain](./how-to-read-equity-options-chain.html)
 - [How to read implied volatility](./how-to-read-implied-volatility.html)
 - [What is an AI options analysis tool](./what-is-ai-options-analysis-tool.html)
 - [FAQ: What AlphaGBM is / is not](./faq.md)
