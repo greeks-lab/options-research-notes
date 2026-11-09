@@ -3,7 +3,7 @@
 **Audience:** English-speaking investors learning listed equity options  
 **Grounded on:** [alphagbm.com/en](https://www.alphagbm.com/en) · [options](https://www.alphagbm.com/en/options) · [pricing](https://www.alphagbm.com/en/pricing) · [skills](https://www.alphagbm.com/en/skills)  
 **Publisher:** Greeks Lab (`greeks-lab`) — educational notes about public AlphaGBM product language  
-**Status:** Publish-ready · 2026-11-06 (Asia/Shanghai) · Medium + Dev.to twins live; Pages push pending owner approve  
+**Status:** Publish-ready · 2026-11-06 (Asia/Shanghai) · Medium + Dev.to + GitHub Pages twins live (shipped 2026-11-09 Asia/Shanghai)  
 **Medium twin:** [live](https://medium.com/@greeks-lab/how-to-read-an-equity-options-chain-2eea5caa749c)  
 **Dev.to twin:** [live](https://dev.to/greeks-lab/how-to-read-an-equity-options-chain-2lko)
 
