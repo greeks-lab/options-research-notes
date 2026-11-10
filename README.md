@@ -4,6 +4,7 @@ Public, crawlable notes on reading options and multi-asset research tools withou
 
 ## Pages
 
+- [Earnings season options: how to read the implied move](./earnings-season-options-implied-move.html)
 - [How to read an equity options chain](./how-to-read-equity-options-chain.html)
 - [How to read implied volatility](./how-to-read-implied-volatility.html)
 - [What is an AI options analysis tool](./what-is-ai-options-analysis-tool.html)
