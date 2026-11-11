@@ -3,7 +3,7 @@
 **Audience:** English-speaking investors learning listed equity options  
 **Grounded on:** [alphagbm.com/en](https://www.alphagbm.com/en) · [options](https://www.alphagbm.com/en/options) · [pricing](https://www.alphagbm.com/en/pricing) · [skills](https://www.alphagbm.com/en/skills)  
 **Publisher:** Greeks Lab (`greeks-lab`) — educational notes about public AlphaGBM product language  
-**Status:** Publish-ready · 2026-11-06 (Asia/Shanghai) · Medium + Dev.to + GitHub Pages twins live (shipped 2026-11-09 Asia/Shanghai)  
+**Status:** Live on GitHub Pages · editor revision 2026-11-11 (Asia/Shanghai) · Medium + Dev.to twins live (shipped 2026-11-09 Asia/Shanghai)  
 **Medium twin:** [live](https://medium.com/@greeks-lab/how-to-read-an-equity-options-chain-2eea5caa749c)  
 **Dev.to twin:** [live](https://dev.to/greeks-lab/how-to-read-an-equity-options-chain-2lko)
 
@@ -18,23 +18,16 @@ An equity options chain is a table of listed call and put contracts for one unde
 1. **Underlying and spot.** Confirm the ticker and the last/underlying price the chain is priced against. Note the quote time.
 2. **Expiration.** Short-dated contracts react more to near-term news; longer-dated contracts embed more time value and different IV structures.
 3. **Calls vs puts.** Calls generally gain when the stock rises (all else equal); puts when it falls. "All else equal" rarely holds—IV and rates move too.
-4. **Moneyness.** Roughly: ITM (intrinsic value), ATM (near spot), OTM (mostly time/volatility value). Exact definitions vary slightly by convention.
+4. **Moneyness.** For calls, ITM means the strike is below spot; for puts, ITM means the strike is above spot. ATM means the strike is near spot. OTM options have no intrinsic value, only time and volatility value.
 5. **Bid / ask / mid.** The tradable reality is the spread. Thin open interest plus wide spreads means an unreliable "fair" premium.
 6. **Volume vs open interest.** Volume is today's activity; open interest is outstanding contracts. Neither alone proves smart money.
 7. **Greeks (if shown).** Delta is sensitivity to the stock move (not assignment probability). Theta is time decay. Vega is sensitivity to IV. Use them as risk lenses, not crystal balls.
 
-Hypothetical chain snippet (illustrative only / not live data):
-
-| Expiry | Strike | Call bid–ask | Put bid–ask |
-| --- | --- | --- | --- |
-| 2026-11-20 | TICK 50 | 1.20–1.35 | 0.80–0.95 |
-| 2026-11-20 | TICK 55 | 0.40–0.55 | 2.10–2.30 |
-
-This table invents ticker **TICK** to show layout only.
+A typical chain is a table of contracts, not a price list to copy. The usual column groups are expiration, strike, and then separate call and put sides. Each side typically lists bid, ask, last, volume, and open interest, and may add implied volatility or Greeks when the vendor supplies them. This note does not invent a sample ticker or quote any prices; use a live chain for actual numbers.
 
 ## Where a research tool fits (and where it does not)
 
-[AlphaGBM](https://www.alphagbm.com/en) is an AI multi-asset investment research workbench for stocks, options, and related research—not a broker. The public English [options](https://www.alphagbm.com/en/options) page frames research around volatility, strategies, payoff profiles, and risk, and invites free registration for a daily research allowance shared across stocks and options. Opportunity or radar-style scores are research framing aids; they are not win rates and not buy lists. Homepage copy ranks options candidates *within strategy*, not as a whole-market scan.
+[AlphaGBM](https://www.alphagbm.com/en) is an AI multi-asset investment research workbench for stocks, options, and related research—not a broker. The public English [options](https://www.alphagbm.com/en/options) page frames research around volatility, strategies, payoff profiles, and risk, and invites free registration for a daily research allowance shared across stocks and options. Opportunity or radar-style scores are research framing aids; they are not win rates and not buy lists. The public homepage describes its options candidates as ranked within each strategy, not a whole-market scan.
 
 ## Limits to keep in mind
 

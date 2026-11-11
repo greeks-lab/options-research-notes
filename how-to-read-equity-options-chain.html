@@ -23,7 +23,7 @@
 <p><strong>Audience:</strong> English-speaking investors learning listed equity options  </p>
 <p><strong>Grounded on:</strong> <a href="https://www.alphagbm.com/en">alphagbm.com/en</a> · <a href="https://www.alphagbm.com/en/options">options</a> · <a href="https://www.alphagbm.com/en/pricing">pricing</a> · <a href="https://www.alphagbm.com/en/skills">skills</a>  </p>
 <p><strong>Publisher:</strong> Greeks Lab (<code class="language-plaintext highlighter-rouge">greeks-lab</code>) — educational notes about public AlphaGBM product language  </p>
-<p><strong>Status:</strong> Publish-ready · 2026-11-06 (Asia/Shanghai) · Medium + Dev.to + GitHub Pages twins live (shipped 2026-11-09 Asia/Shanghai)</p>
+<p><strong>Status:</strong> Live on GitHub Pages · editor revision 2026-11-11 (Asia/Shanghai) · Medium + Dev.to twins live (shipped 2026-11-09 Asia/Shanghai)</p>
 <p><strong>Medium twin:</strong> <a href="https://medium.com/@greeks-lab/how-to-read-an-equity-options-chain-2eea5caa749c">live</a></p>
 <p><strong>Dev.to twin:</strong> <a href="https://dev.to/greeks-lab/how-to-read-an-equity-options-chain-2lko">live</a></p>
 <h2 id="short-answer">Short answer</h2>
@@ -33,24 +33,14 @@
 <li><strong>Underlying and spot.</strong> Confirm the ticker and the last/underlying price the chain is priced against. Note the quote time.</li>
 <li><strong>Expiration.</strong> Short-dated contracts react more to near-term news; longer-dated contracts embed more time value and different IV structures.</li>
 <li><strong>Calls vs puts.</strong> Calls generally gain when the stock rises (all else equal); puts when it falls. "All else equal" rarely holds—IV and rates move too.</li>
-<li><strong>Moneyness.</strong> Roughly: ITM (intrinsic value), ATM (near spot), OTM (mostly time/volatility value). Exact definitions vary slightly by convention.</li>
+<li><strong>Moneyness.</strong> For calls, ITM means the strike is below spot; for puts, ITM means the strike is above spot. ATM means the strike is near spot. OTM options have no intrinsic value, only time and volatility value.</li>
 <li><strong>Bid / ask / mid.</strong> The tradable reality is the spread. Thin open interest plus wide spreads means an unreliable "fair" premium.</li>
 <li><strong>Volume vs open interest.</strong> Volume is today's activity; open interest is outstanding contracts. Neither alone proves smart money.</li>
 <li><strong>Greeks (if shown).</strong> Delta is sensitivity to the stock move (not assignment probability). Theta is time decay. Vega is sensitivity to IV. Use them as risk lenses, not crystal balls.</li>
 </ol>
-<p>Hypothetical chain snippet (illustrative only / not live data):</p>
-<table>
-  <thead>
-    <tr><th>Expiry</th><th>Strike</th><th>Call bid–ask</th><th>Put bid–ask</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>2026-11-20</td><td>TICK 50</td><td>1.20–1.35</td><td>0.80–0.95</td></tr>
-    <tr><td>2026-11-20</td><td>TICK 55</td><td>0.40–0.55</td><td>2.10–2.30</td></tr>
-  </tbody>
-</table>
-<p>This table invents ticker <strong>TICK</strong> to show layout only.</p>
+<p>A typical chain is a table of contracts, not a price list to copy. The usual column groups are expiration, strike, and then separate call and put sides. Each side typically lists bid, ask, last, volume, and open interest, and may add implied volatility or Greeks when the vendor supplies them. This note does not invent a sample ticker or quote any prices; use a live chain for actual numbers.</p>
 <h2 id="research-tool">Where a research tool fits (and where it does not)</h2>
-<p><a href="https://www.alphagbm.com/en">AlphaGBM</a> is an AI multi-asset investment research workbench for stocks, options, and related research—not a broker. The public English <a href="https://www.alphagbm.com/en/options">options</a> page frames research around volatility, strategies, payoff profiles, and risk, and invites free registration for a daily research allowance shared across stocks and options. Opportunity or radar-style scores are research framing aids; they are not win rates and not buy lists. Homepage copy ranks options candidates <em>within strategy</em>, not as a whole-market scan.</p>
+<p><a href="https://www.alphagbm.com/en">AlphaGBM</a> is an AI multi-asset investment research workbench for stocks, options, and related research—not a broker. The public English <a href="https://www.alphagbm.com/en/options">options</a> page frames research around volatility, strategies, payoff profiles, and risk, and invites free registration for a daily research allowance shared across stocks and options. Opportunity or radar-style scores are research framing aids; they are not win rates and not buy lists. The public homepage describes its options candidates as ranked within each strategy, not a whole-market scan.</p>
 <h2 id="limits">Limits to keep in mind</h2>
 <ul>
 <li>Chains update asynchronously; always read timestamps.</li>
